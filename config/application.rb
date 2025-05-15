@@ -40,5 +40,8 @@ module Harbor
     end
 
     config.active_job.queue_adapter = :good_job
+
+    # require_relative "../lib/firehose.rb"
+    # config.middleware.use Firehose # Firehose :3
   end
 end
